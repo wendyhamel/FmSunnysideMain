@@ -15,10 +15,17 @@
     tailwind.config = {
       theme: {
         extend: {
+          spacing: {
+           '18': '4.5rem' 
+          },
           fontSize: {
-            '7.5xl': ['4rem', {
+            '4.5xl': ['2.5rem', {
               letterSpacing: '-0.04em',
               lineHeight: '2.75rem',
+            }],
+            '7.5xl': ['4rem', {
+              letterSpacing: '-0.04em',
+              lineHeight: '4.25rem',
             }],
           },
         },
@@ -100,7 +107,7 @@
         </div>
       </div>
       <div class="flex flex-col items-center gap-10 mt-20 pt-1 mb-32 lg:mt-24 lg:gap-28">
-        <h1 class="text-center text-white font-display uppercase tracking-widest font-extrabold text-[2.5rem] leading-[2.75rem] max-w-xs md:max-w-full lg:text-[4rem]">We are creatives</h1>
+        <h1 class="text-center text-white font-display uppercase tracking-widest font-extrabold text-4.5xl  max-w-xs md:max-w-full lg:text-[4rem]">We are creatives</h1>
         <img class="" src="images/icon-arrow-down.svg" alt="arrow down">
       </div>
     </div>
@@ -115,7 +122,7 @@
           </div>
           <div class="flex-1">
            <div class="max-w-lg mx-auto px-4 flex flex-col items-center gap-6 py-16 md:py-2 md:justify-center md:h-full md:items-start">
-             <h2 class="font-display text-4xl font-extrabold text-gray-400 text-center md:text-left lg:text-[2.5rem] lg:leading-[2.75rem]">Transform your
+             <h2 class="font-display text-4xl font-extrabold text-gray-400 text-center md:text-left lg:text-4.5xl">Transform your
                <br/>brand</h2>
              <p class="max-w-md text-center text-lg text-gray-200 md:text-left">
                We are a full-service creative agency specializing in helping brands grow fast.
@@ -134,7 +141,7 @@
         </div>
         <div class="flex-1">
           <div class="max-w-lg mx-auto px-4 flex flex-col items-center gap-6 py-16 md:py-2 md:justify-center md:h-full md:items-start">
-            <h2 class="font-display text-4xl font-extrabold text-gray-400 text-center md:text-left lg:text-[2.5rem] lg:leading-[2.75rem]">Stand out to the right audience</h2>
+            <h2 class="font-display text-4xl font-extrabold text-gray-400 text-center md:text-left lg:text-4.5xl">Stand out to the right audience</h2>
             <p class="max-w-md text-center text-lg text-gray-200 md:text-left">
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
             </p>
@@ -154,7 +161,7 @@
           </div>
           <div class="absolute bottom-12 inset-x-0 px-6 sm:bottom-20 md:bottom-6 lg:bottom-12">
             <div class="px-6 flex flex-col items-center gap-6 text-cyan-200 sm:max-w-md sm:mx-auto md:gap-10">
-              <h2 class="font-display text-3xl font-extrabold text-center sm:text-[2.5rem]">Graphic design</h2>
+              <h2 class="font-display text-3xl font-extrabold text-center sm:text-4.5xl">Graphic design</h2>
               <p class="text-center text-base tracking-tighter leading-1 sm:text-lg sm:px-4">
                 Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
               </p>
@@ -168,7 +175,7 @@
           </div>
           <div class="absolute bottom-12 inset-x-0 px-6 sm:bottom-20 md:bottom-6 lg:bottom-12">
             <div class="px-6 flex flex-col items-center gap-6 text-blue sm:max-w-md sm:mx-auto md:gap-10">
-              <h2 class="font-display text-3xl font-extrabold text-center sm:text-[2.5rem]">Photography</h2>
+              <h2 class="font-display text-3xl font-extrabold text-center sm:text-4.5xl">Photography</h2>
               <p class="text-center text-base tracking-tighter leading-1 sm:text-lg sm:px-4">
                 Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
               </p>
@@ -181,7 +188,7 @@
       <h2 class="text-center font-display uppercase font-extrabold text-base tracking-[0.15em] text-gray-100 mb-16 md:text-lg">Client testimonials</h2>
       <div class="flex flex-col items-center gap-20 md:mx-auto md:flex-row md:gap-4 md:justify-center">
         <article class="flex flex-col items-center gap-8 md:gap-12 max-w-sm">
-          <div><img class="rounded-full w-[4.5rem] h-[4.5rem]" src="images/image-emily.jpg" alt="avatar of user"></div>
+          <div><img class="rounded-full w-18 h-18" src="images/image-emily.jpg" alt="avatar of user"></div>
           <div class="flex flex-col items-center gap-8 md:gap-12">
             <p class="text-gray-300 text-center leading-relaxed md:text-lg md:px-4">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
             <div>
@@ -191,7 +198,7 @@
           </div>
         </article>
         <article class="flex flex-col items-center gap-8 md:gap-12 max-w-sm">
-          <div><img class="rounded-full w-[4.5rem] h-[4.5rem]" src="images/image-thomas.jpg" alt="avatar of user"></div>
+          <div><img class="rounded-full w-18 h-18" src="images/image-thomas.jpg" alt="avatar of user"></div>
           <div class="flex flex-col items-center gap-8 md:gap-12">
             <p class="text-gray-300 text-center leading-relaxed md:text-lg md:px-4">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
             <div>
@@ -201,7 +208,7 @@
           </div>
         </article>
         <article class="flex flex-col items-center gap-8 md:gap-12 max-w-sm">
-          <div><img class="rounded-full w-[4.5rem] h-[4.5rem]" src="images/image-jennie.jpg" alt="avatar of user"></div>
+          <div><img class="rounded-full w-18 h-18" src="images/image-jennie.jpg" alt="avatar of user"></div>
           <div class="flex flex-col items-center gap-8 md:gap-12">
             <p class="text-gray-300 text-center leading-relaxed md:text-lg md:px-4">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
             <div>
